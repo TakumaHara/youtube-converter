@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<Map<String, dynamic>> getChTitleFromChID(String channelID) async{
     Map<String, dynamic> data = {};
     try{
-      const String api = "AIzaSyBN-Y_ua5u2kTtqbFT4S9LBy4Dk2iDCgM4";
+      const String api = "YOUR_APIKEY";
       final url = Uri.parse("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=$channelID&type=video&key=$api");
       final response = await http.get(url);
       data =jsonDecode(response.body);
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<Map<String, dynamic>> getChIDFromURL(String channelUrl) async{
     Map<String, dynamic> data = {};
     try{
-      const String api = "AIzaSyBN-Y_ua5u2kTtqbFT4S9LBy4Dk2iDCgM4";
+      const String api = "YOUR_APIKEY";
       channelUrl = channelUrl.substring(24,channelUrl.length);
       final url = Uri.parse("https://www.googleapis.com/youtube/v3/search?part=snippet&q=$channelUrl&type=video&key=$api");
       final response = await http.get(url);
