@@ -2,7 +2,7 @@
 The system can get a channel name from a channel ID that you input or a channel ID from a channel URL using YoutubeAPI.
 <img width="2048" alt="Screen Shot 2023-05-28 at 16 02 57" src="https://github.com/TakumaHara/youtube-converter/assets/84825478/428b355c-e08d-4b6a-b7c2-e4eff14e05b1">
 
-##URL
+## URL
 https://converter-2faae.web.app/
 Because of the API usage limitation, this system may stop working in the middle of the process.
 
